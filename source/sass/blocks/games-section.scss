@@ -1,0 +1,43 @@
+.games-section {
+  position: relative;
+
+  padding-top: clamp(100px, 12.879vw, 170px);
+  padding-bottom: clamp(50px, 10.606vw, 140px);
+
+  background-image: url(../img/game-bg.png);
+  background-attachment: fixed;
+  box-shadow: inset 0px 40px 42px -13px #000000,inset 0px -40px 42px -13px #000000;
+
+  @include bg_cover;
+
+  &__title {
+    font-size: clamp(30px, 6.048vw, 75px);
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    grid-gap: clamp(40px, 6.667vw, 88px);
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  &__text {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--color-a);
+    max-width: 615px;
+    margin: clamp(40px, 6.818vw, 90px) auto clamp(30px, 5.53vw, 73px);
+  }
+}

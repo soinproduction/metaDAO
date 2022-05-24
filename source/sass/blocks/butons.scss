@@ -1,0 +1,55 @@
+.gradient-btn {
+  background: var(--button-bg);
+  border: 1px solid rgba(255, 255, 255, 0.21);
+  border-radius: 68px;
+  padding: clamp(15px, 2.419vw, 30px)
+           clamp(20px, 2.984vw, 37px);
+
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(16px, 1.935vw, 24px);
+  line-height: 100%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-a);
+
+  box-shadow: 0px 6px 40px 10px rgba(251,63,255,0.36);
+  transition: all .4s;
+
+  &:hover {
+    box-shadow: 0px 6px 40px 10px rgba(251,63,255,0.8);
+    transform: scale(1.03);
+  }
+
+}
+
+.radial-gradient-btn {
+  min-width: clamp(140px,18.712vw, 247px);
+  background: var(--radial-btn-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-gap: clamp(10px, 1.288vw, 17px);
+  padding: clamp(15px, 1.742vw, 23px)
+           clamp(20px, 2.984vw, 37px);
+  box-shadow: 0 9px 26px rgba(64, 136, 224, 0.57),
+    inset 0 4px 13px rgba(255, 255, 255, 0.25);
+  border-radius: 12px;
+  border: 0 solid rgba(255, 255, 255, 0.21);
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(14px, 1.212vw, 16px);
+  line-height: 100%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: var(--color-a);
+  transition: all .4s;
+
+  &:hover {
+    transform: scale(1.08);
+    background: radial-gradient(66.58% 146.41% at -2.19% 16.98%,#14bdff 0,rgba(3, 57, 89, 0) 74.36%),radial-gradient(80.2% 129.9% at 96.3% 0, #c51bff 0, rgba(3, 57, 89, 0) 100%),radial-gradient(72.79% 65.22% at 80.51% 92.28%,rgba(68, 220, 255, 0.71) 0,rgba(120, 199, 217, 0) 84.87%);
+  }
+}

@@ -1,0 +1,27 @@
+
+.logo-section {
+  padding: clamp(20px, 2.083vw, 30px);
+  background-color: var(--color-b);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-left: 0;
+  border-right: 0;
+  pointer-events: none;
+
+  &__slider {
+    overflow: initial;
+  }
+
+  &__wrapper {
+    -webkit-transition-timing-function: linear !important;
+    transition-timing-function: linear !important;
+  }
+
+  &__slide {
+    width: clamp(100px, 10.417vw, 150px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+}

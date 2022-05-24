@@ -1,0 +1,13 @@
+.roadmap {
+  padding-top: clamp(100px, 15.152vw, 200px);
+  padding-bottom: clamp(100px, 18.939vw, 250px);
+  background-color: black;
+
+  &__inner {
+    grid-gap: clamp(40px, 9.091vw, 120px);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+}

@@ -1,0 +1,122 @@
+.earn-section {
+  padding-top: clamp(40px, 11.894vw, 157px);
+  background-image: url(../img/earn/img-bg.png);
+  // background-attachment: fixed;
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(5px);
+  position: relative;
+
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    grid-gap: clamp(40px, 6.061vw, 80px);
+  }
+
+  &__image {
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, clamp(250px,25.424vw, 296px));
+    justify-content: center;
+    grid-gap: 20px Min(30.985vw, 409px);
+    width: 100%;
+
+    margin: 0 auto;
+
+    @media (max-width:768px) {
+      grid-gap: 20px 40px;
+    }
+
+    @media (max-width:575px) {
+      grid-template-columns: 100%;
+      width: 90%;
+      justify-content: center;
+      margin: 0 auto;
+    }
+  }
+
+  &__item {
+    flex-shrink: 0;
+    width: 100%;
+  }
+
+  &__link {
+    background-image: var(--photo-bg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:  center center;
+    position: relative;
+    width: 100%;
+    transition: all .4s;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    grid-gap: clamp(20px, 3.258vw, 43px);
+    padding: clamp(20px, 3.485vw, 46px)
+             clamp(5px,1.758vw,28px)
+             clamp(20px, 3.485vw, 46px);
+
+    z-index: 0;
+    box-shadow: 0px 6px 40px 10px rgba(252, 63, 255, 0);
+
+    &::before {
+      z-index: -1;
+      @include psevdo;
+      width: 100%;
+      height: 100%;
+      background-size: 100% 100%;
+      background-image: var(--photo-border);
+      opacity: 0;
+      transition: all .4s;
+
+    }
+
+    &:hover {
+      transform: scale(1.03);
+      box-shadow: 0px 6px 40px 10px #4559c1cc;
+
+      &::before {
+        opacity: 1;
+      }
+    }
+
+  }
+
+  &__text {
+    min-height: Min(8.106vw, 100px);
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--color-a);
+  }
+
+  &__play {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 15px;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--color-a);
+  }
+}

@@ -1,0 +1,33 @@
+header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: var( --body-bg);
+
+  display: none;
+}
+
+.header {
+  padding: 30px 0;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  align-items: center;
+  grid-gap: 30%;
+  min-height: Min(12.903vw, 110px);
+  position: relative;
+
+  &__logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__right {
+    display: flex;
+  }
+}

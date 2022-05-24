@@ -1,0 +1,22 @@
+.partners {
+  padding-top: clamp(40px, 5.833vw, 77px);
+  padding-bottom: clamp(60px, 12.879vw, 170px);
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    grid-gap: clamp(40px, 6.061vw, 80px);
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    @media (max-width:575px) {
+      grid-template-columns: 100%;
+      grid-gap: 30px;
+    }
+  }
+}

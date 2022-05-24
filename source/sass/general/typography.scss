@@ -1,0 +1,35 @@
+.general-title {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(30px, 3.25vw, 52px);
+  line-height: 106%;
+  color: var(--general-title);
+}
+
+.general-text {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(16px, 1.25vw, 20px);
+  line-height: 140%;
+  color: var(--general-text);
+}
+
+.gradient-title {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 300;
+  font-size: clamp( 30px,7.273vw, 96px);
+  line-height: 102.2%;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  background: var(--gradient-title);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+
+}

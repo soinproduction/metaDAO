@@ -1,0 +1,31 @@
+.swiper-pagination {
+  max-width: 90%;
+  margin: auto 0;
+  display: flex;
+  grid-gap: 10px;
+  justify-content: center;
+  align-items: center;
+  min-height: 17px;
+
+  @media (min-width: 1024px) {
+    display: none;
+  }
+
+  .swiper-pagination-bullet {
+    width: 9px;
+    height: 9px;
+    border: 1px solid #FFFFFF;
+    background-color: transparent;
+    border-radius: 50%;
+    transition:  all .4s;
+
+
+    &.swiper-pagination-bullet-active {
+      width: 17px;
+      height: 17px;
+      background: var(--bullets-bg);
+      border: 1px solid rgba(255, 255, 255, 0.21);
+      box-shadow: inset 0px 4px 13px rgba(255, 255, 255, 0.25);
+    }
+  }
+}

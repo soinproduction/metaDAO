@@ -1,0 +1,67 @@
+.first-section {
+  position: relative;
+
+  padding-top: calc(clamp(30px, 5.645vw, 70px) + 160px);
+
+  background-image: url(../img/index-bg.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  &__top {
+    margin-bottom: clamp(20px, 5.556vw, 80px);
+  }
+
+  &__planet {
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    grid-gap: 25px;
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    font-family: var(--font-family);
+    text-align: center;
+    color: var(--color-a);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+
+  .planet {
+    position: absolute;
+    top: 20%;
+
+    width: Min(32.258vw, 400px);
+    height: Min(32.258vw, 400px);
+  }
+
+  .planet-a {
+    left: Max(-12.097vw, -150px);
+
+    animation: rightAnimation 400s infinite alternate linear;
+  }
+
+  .planet-b {
+    right: Max(-12.097vw, -150px);
+
+    animation: leftAnimation 400s infinite alternate linear;
+  }
+}

@@ -1,0 +1,25 @@
+.nav {
+  &__list {
+    display: flex;
+    grid-gap: 30px;
+    max-width: 600px;
+    flex-wrap: wrap-reverse;
+  }
+
+  &__item {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: var(--color-a);
+    transition: all .4s;
+
+    &:hover {
+      color: #FB3FFF;
+      transform: scale(1.15) translateY(-5px);
+    }
+
+  }
+}

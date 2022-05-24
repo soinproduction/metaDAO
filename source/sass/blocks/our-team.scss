@@ -1,0 +1,17 @@
+.our-team {
+  padding-top: clamp(80px, 16.818vw, 222px);
+  padding-bottom: clamp(100px, 19.394vw, 256px);
+  background-image: url(../img/list-section-bg.png);
+  @include bg_position;
+
+  &__container {
+    overflow: initial;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-gap: clamp(40px, 8.871vw, 110px);
+  }
+}

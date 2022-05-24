@@ -1,0 +1,64 @@
+.welcome-list {
+  min-height: clamp(230px,35.833vw, 473px);
+  position: relative;
+  pointer-events: none;
+
+  &__item {
+    position: absolute;
+    box-shadow: 0px 6px 40px 10px #4559c1cc;
+
+    &:nth-child(1) {
+      bottom: 10%;
+      animation: float 13s linear infinite;
+
+      width: Min(8.712vw, 115px);
+      height: Min(11.667vw, 154px);
+
+    }
+
+    &:nth-child(2) {
+      animation: float 11s linear infinite;
+      bottom: 60%;
+      left: 15%;
+
+      width: Min(8.258vw, 109px);
+      height: Min(11.212vw,148px);
+    }
+
+    &:nth-child(3) {
+      animation: float 9s linear infinite;
+      bottom: 17%;
+      left: 42%;
+
+      width: Min(13.485vw, 178px);
+      height: Min(17.879vw,236px);
+    }
+
+    &:nth-child(4) {
+      animation: float 8s linear infinite;
+      bottom: 50%;
+      left: 68%;
+
+      width: Min(4.318vw, 57px);
+      height: Min(5.833vw,77px);
+    }
+
+    &:nth-child(5) {
+      animation: float 13s linear infinite;
+      bottom: 9%;
+      left: 75%;
+
+      width: Min(7.955vw, 105px);
+      height: Min(10.53vw,10.53vw);
+    }
+
+    &:nth-child(6) {
+      animation: float 5s linear infinite;
+      bottom: 53%;
+      left: 86%;
+
+      width: Min(13.485vw, 178px);
+      height: Min(17.955vw,237px);
+    }
+  }
+}

@@ -1,0 +1,54 @@
+:root {
+    /* -- Fonts --*/
+  --font-family: "Gotham Pro", sans-serif; // var(--font-family);
+
+  // text color
+  --color-a: #ffffff; // var(--color-a);
+  --color-b: #000000; // var(--color-b);
+  --color-c: #7C7CA5; // var(--color-c);
+
+
+  --color-d: #E128FF; // var(--color-d);
+  --color-e: #FFD028; // var(--color-e);
+  --color-f: #20C0FF; // var(--color-f);
+  --color-g: rgba(68, 220, 255, 0.71); // var(--color-g);
+  --color-h: #5AAB28; // var(--color-h);
+  --color-i: #3042FF; // var(--color-i);
+
+
+
+  --body-bg: #020004;
+  --button-bg: #FB3FFF;
+
+  --counter-bg: radial-gradient(50% 50% at 50% 50%, rgba(32, 192, 255, 0.2) 24.27%, rgba(0, 0, 0, 0) 100%), radial-gradient(50% 50% at 50% 50%, rgba(202, 45, 255, 0.3) 82.6%, rgba(0, 0, 0, 0) 100%), #140359;
+  --radial-btn-bg: radial-gradient(
+    66.58% 146.41% at -2.19% 16.98%,
+    #14bdff 0,
+    rgba(3, 57, 89, 0) 74.36%
+  ),
+  radial-gradient(80.2% 129.9% at 96.3% 0, #c51bff 0, rgba(3, 57, 89, 0) 100%),
+  radial-gradient(
+    72.79% 65.22% at 80.51% 92.28%,
+    rgba(68, 220, 255, 0.71) 0,
+    rgba(120, 199, 217, 0) 84.87%
+  ),
+  #3042ff;
+
+  --gradient-title: linear-gradient(93.44deg, #3B68E6 0.84%, #31F3FF 50.94%, #FB3FFF 100%), #FFFFFF;
+
+  --bullets-bg: radial-gradient(66.58% 146.41% at -2.19% 16.98%, #14BDFF 0%, rgba(3, 57, 89, 0) 74.36%), radial-gradient(80.2% 129.9% at 96.3% 0%, #C51BFF 0%, rgba(3, 57, 89, 0) 100%), radial-gradient(72.79% 65.22% at 80.51% 92.28%, rgba(68, 220, 255, 0.71) 0%, rgba(120, 199, 217, 0) 84.87%), #3042FF;
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
