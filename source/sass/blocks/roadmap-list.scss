@@ -65,7 +65,8 @@
           width: 10px;
           height: 10px;
           background-image: var(--done-icon);
-          background-size: contain;
+          background-size: 100% 100%;
+          flex-shrink: 0;
           background-repeat: no-repeat;
           background-position: center;
           right: 0;

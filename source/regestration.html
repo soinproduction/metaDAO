@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="Ru">
+@@include('_head.html',{})
+
+<body class="regestration-page">
+  @@include('_header-reg.html',{})
+
+  <main>
+    <section class="regestration">
+      <div class="container">
+        <div class="regestration__box">
+            <div class="regestration__box-top">
+              <h2 class="regestration__title">
+                Регистрация
+              </h2>
+              <p class="regestration__subtitle">
+                Зарегистрируйтесь с помощью вашего аккаунта:
+              </p>
+              <ul class="social regestration__social">
+                <li class="social__item">
+                  <a href="https://twitter.com/MetaDAOGuild" target="_blank">
+                    <svg width='28' height='22'>
+                      <use href='img/sprite/sprite.svg#discord'></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="https://twitter.com/MetaDAOGuild" target="_blank">
+                    <svg width='22' height='22'>
+                      <use href='img/sprite/sprite.svg#google'></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+              <p class="regestration__subtitle">
+                или с помощью электронной почты:
+              </p>
+            </div>
+
+            <form action="#" class="regestration__form">
+              <div class="regestration__form-wrapper">
+                <label for="#">
+                  <input class="regestration__form-input" type="text" placeholder="Ваше имя" required>
+                </label>
+                <label for="#">
+                  <input class="regestration__form-input" type="email" placeholder="Ваш email" required>
+                </label>
+                <label for="#">
+                  <input class="regestration__form-input" type="password" placeholder="Введите пароль" required>
+                </label>
+                <label for="#">
+                  <input class="regestration__form-input" type="password" placeholder="Повторите пароль" required>
+                </label>
+
+                <div class="checkbox">
+                  <label class="custom-checkbox">
+                    <input type="checkbox" name="confirm" required value="true">
+                    <span>Я принимаю условия пользовательского соглашения</span>
+                  </label>
+                </div>
+              </div>
+              <button class="regestration__form-btn radial-gradient-btn">
+                Регистрация
+              </button>
+            </form>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <div class="overlay">
+    <div class="modal mail-modal" data-modal="mail">
+      <h2 class="modal__title mail-modal__title">
+        Подпишитесь на рассылку
+      </h2>
+      <div class="subscribe active">
+        <span class="modal__subtitle mail-modal__subtitle">
+          Чтобы не пропустить Private Sale, оставьте ваш e-mail. Мы пришлем уведомление о старте продаж токена MDGG.
+        </span>
+        <form action="#" class="regestration__form mail-modal__form">
+          <div class="regestration__form-wrapper modal__form-wrapper">
+            <label for="#">
+              <input class="regestration__form-input" type="email" placeholder="Ваш email" required>
+            </label>
+            <button class="regestration__form-btn radial-gradient-btn">
+              Подписаться
+            </button>
+          </div>
+        </form>
+        <span class="mail-modal__info">
+          Я даю согласие на обработку моих персональных данных и на получение рассылки
+        </span>
+      </div>
+      <div class="mail-done">
+        <span class="modal__subtitle mail-modal__subtitle">
+          Спасибо за подписку. Ждем вас на Private Sale
+        </span>
+
+        <span class="modal__subtitle mail-modal__subtitle">
+          Также можно подписаться на любую удобную вам социальную сеть, чтобы не пропустить сообщение о старте.
+        </span>
+
+        <ul class="social modal__social">
+          <li class="social__item">
+            <a href="https://twitter.com/MetaDAOGuild" target="_blank">
+              <svg width='30' height='30'>
+                <use href='img/sprite/sprite.svg#twiter'></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="https://twitter.com/MetaDAOGuild" target="_blank">
+              <svg width='30' height='30'>
+                <use href='img/sprite/sprite.svg#telegram'></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="https://twitter.com/MetaDAOGuild" target="_blank">
+              <svg width='30' height='30'>
+                <use href='img/sprite/sprite.svg#discord'></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="https://twitter.com/MetaDAOGuild" target="_blank">
+              <svg width='30' height='30'>
+                <use href='img/sprite/sprite.svg#yt'></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="https://twitter.com/MetaDAOGuild" target="_blank">
+              <svg width='30' height='30'>
+                <use href='img/sprite/sprite.svg#medium'></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="https://twitter.com/MetaDAOGuild" target="_blank">
+              <svg width='30' height='30'>
+                <use href='img/sprite/sprite.svg#instagram'></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="modal confirm-modal" data-modal="confirm">
+        <span class="modal__subtitle mail-modal__subtitle">
+          На ваш email отправлено письмо для подтверждения регистрации. Пожалуйста, введите код из письма ниже:
+        </span>
+        <form action="#" class="regestration__form confirm-modal__form">
+          <div class="regestration__form-wrapper">
+            <label for="#">
+              <input class="regestration__form-input" type="number" placeholder="Kод из письма" required>
+            </label>
+            <button class="regestration__form-btn radial-gradient-btn">
+              Подтвердить
+            </button>
+          </div>
+        </form>
+    </div>
+  </div>
+
+  <script src="js/aos.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/common.min.js"></script>
+</body>
+
+</html>

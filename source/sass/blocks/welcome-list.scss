@@ -5,14 +5,15 @@
 
   &__item {
     position: absolute;
-    box-shadow: 0px 6px 40px 10px #4559c1cc;
+    box-shadow: 0px 6px 40px 10px #455ac132;
+    display: flex;
 
     &:nth-child(1) {
       bottom: 10%;
       animation: float 13s linear infinite;
 
       width: Min(8.712vw, 115px);
-      height: Min(11.667vw, 154px);
+      height: auto;
 
     }
 
@@ -22,7 +23,7 @@
       left: 15%;
 
       width: Min(8.258vw, 109px);
-      height: Min(11.212vw,148px);
+      height: auto;
     }
 
     &:nth-child(3) {
@@ -31,7 +32,7 @@
       left: 42%;
 
       width: Min(13.485vw, 178px);
-      height: Min(17.879vw,236px);
+      height: auto;
     }
 
     &:nth-child(4) {
@@ -40,7 +41,7 @@
       left: 68%;
 
       width: Min(4.318vw, 57px);
-      height: Min(5.833vw,77px);
+      height: auto;
     }
 
     &:nth-child(5) {
@@ -49,7 +50,7 @@
       left: 75%;
 
       width: Min(7.955vw, 105px);
-      height: Min(10.53vw,10.53vw);
+      height: auto;
     }
 
     &:nth-child(6) {
@@ -58,7 +59,7 @@
       left: 86%;
 
       width: Min(13.485vw, 178px);
-      height: Min(17.955vw,237px);
+      height: auto;
     }
   }
 }

@@ -1,0 +1,23 @@
+.social {
+  display: flex;
+  width: fit-content;
+  margin: 0 auto;
+  grid-gap: 15px;
+  align-items: center;
+
+  svg {
+    fill: #fff;
+  }
+
+  #gradient {
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+
+  &__item a:hover {
+    #gradient {
+      opacity: 1;
+    }
+  }
+
+}

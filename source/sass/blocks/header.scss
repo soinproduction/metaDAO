@@ -2,22 +2,26 @@ header {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   display: flex;
   align-items: center;
-  position: sticky;
+  position: absolute;
+  width: 100%;
+  left: 0;
   top: 0;
   z-index: 10;
-  background-color: var( --body-bg);
+  background-color: transparent;
 
-  display: none;
+
 }
+
+
+
 
 .header {
   padding: 30px 0;
-  display: grid;
-  grid-template-columns: auto auto;
-  justify-content: space-between;
+  display: flex;
+  // grid-template-columns: 1fr auto auto auto;
   align-items: center;
-  grid-gap: 30%;
-  min-height: Min(12.903vw, 110px);
+  grid-gap: 30px;
+  min-height: Min(12.348vw, 163px);
   position: relative;
 
   &__logo {
@@ -27,7 +31,87 @@ header {
     transform: translate(-50%, -50%);
   }
 
+  &__login {
+    display: flex;
+    grid-gap: clamp(20px, 2.121vw, 28px);
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color:  var(--color-a);
+  }
+
+  &__nav {
+    flex-grow: 1;
+  }
+
   &__right {
     display: flex;
+  }
+
+
+
+  @media (min-width:1024px) and (max-width:1440px) {
+    padding: 15px 0 15px;
+    display: grid;
+    min-height: initial;
+    grid-template-columns: 15% 510px auto auto;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-areas:
+    "logo  nav  connect login"
+    "logo  nav  connect select";
+    grid-gap: 15px 20px;
+
+    &__logo {
+      position: initial;
+      width: 100%;
+      transform: none;
+      grid-area: logo;
+    }
+
+    .nav__list {
+      grid-gap: 20px;
+    }
+
+    &__login {
+      align-self: flex-end;
+      grid-area: login;
+      flex-direction: column;
+      grid-gap: 15px;
+      justify-content: flex-end;
+    }
+
+    .connect-btn {
+      grid-area: connect;
+    }
+
+    .nav {
+      flex-grow: initial;
+      grid-area: nav;
+      white-space: nowrap;
+    }
+
+    .lang-select {
+      grid-area: select;
+      margin: 0 auto;
+    }
+
+    .connect-btn {
+      margin-left: auto;
+
+      &.connected {
+        padding-left: 45px;
+
+        &::before {
+          height: 40px;
+          height: 40px;
+        }
+      }
+    }
   }
 }

@@ -1,7 +1,7 @@
 .first-section {
   position: relative;
 
-  padding-top: calc(clamp(30px, 5.645vw, 70px) + 160px);
+  padding-top: calc(clamp(50px, 5.645vw, 70px) + var(--header-min-height));
 
   background-image: url(../img/index-bg.png);
   background-position: center;
@@ -47,7 +47,7 @@
 
   .planet {
     position: absolute;
-    top: 20%;
+    top: 24%;
 
     width: Min(32.258vw, 400px);
     height: Min(32.258vw, 400px);

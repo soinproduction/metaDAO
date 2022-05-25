@@ -3,7 +3,7 @@
     display: flex;
     grid-gap: 30px;
     max-width: 600px;
-    flex-wrap: wrap-reverse;
+
   }
 
   &__item {
@@ -17,7 +17,7 @@
     transition: all .4s;
 
     &:hover {
-      color: #FB3FFF;
+      color: #31F3FF;
       transform: scale(1.15) translateY(-5px);
     }
 

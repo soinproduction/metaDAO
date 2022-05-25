@@ -1,0 +1,21 @@
+.login-list {
+  display: flex;
+    grid-gap: clamp(20px, 2.121vw, 28px);
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color:  var(--color-a);
+
+    &__item {
+      transition: all .4s;
+
+      &:hover {
+        color: #31F3FF;
+      }
+    }
+}
