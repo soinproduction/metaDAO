@@ -59,14 +59,14 @@
       </div>
 
       <div class="planet planet-a">
-        <picture data-aos="fade-right" data-aos-delay="650" data-aos-duration="2700" data-aos-easing="linear">
+        <picture data-aos="fade-right">
           <source type='image/webp' srcset='img/planet-a.webp'>
           <img width='390' height='400' src='img/planet-a.png' alt='image'>
         </picture>
       </div>
 
       <div class="planet planet-b">
-        <picture data-aos="fade-left" data-aos-delay="650" data-aos-duration="2500" data-aos-easing="linear">
+        <picture data-aos="fade-left">
           <source type='image/webp' srcset='img/planet-b.webp'>
           <img width='390' height='400' src='img/planet-b.png' alt='image'>
         </picture>
@@ -292,7 +292,7 @@
               </button>
             </div>
             <div class="list-section__image list-section__image--mode ">
-              <picture>
+              <picture data-aos="fade-left" data-aos-delay="50" data-aos-duration="1200">
                 <source type='image/webp' srcset='img/scholarship/img-bg.webp'>
                 <img width='343' height='364' src='img/scholarship/img-bg.png' alt='image'>
               </picture>
@@ -370,7 +370,7 @@
               </button>
             </div>
             <div class="list-section__image list-section__image--meta-rent">
-              <picture >
+              <picture data-aos="fade-right" data-aos-delay="50" data-aos-duration="1200">
                 <source type='image/webp' srcset='img/meta-rent/bg.webp'>
                 <img width='680' height='612' src='img/meta-rent/bg.png' alt='image'>
               </picture>
@@ -394,7 +394,7 @@
                     <img width='190' height='100' src='img/meta-rent/img3.png' alt='image'>
                   </picture>
                 </li>
-                <li class="list-images__item" data-aos="fade-right" data-aos-delay="850" data-aos-duration="1200">
+                <li class="list-images__item" data-aos="fade-right" data-aos-delay="0" data-aos-duration="1200">
                   <picture>
                     <source type='image/webp' srcset='img/meta-rent/img4.webp'>
                     <img width='190' height='100' src='img/meta-rent/img4.png' alt='image'>
@@ -1175,8 +1175,25 @@
 
 
   @@include('_footer.html',{})
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-  <script src="js/aos.js"></script>
+
+  <div class="overlay">
+    <div class="onboard-container">
+        <div class="loader">
+            <lottie-player src="https://assets2.lottiefiles.com/private_files/lf30_lndg7fhf.json"  background="transparent"  speed="1"  loop  autoplay></lottie-player>
+        </div>
+        <div class="up">
+            <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_kfzgxkvq.json"  background="transparent"  speed="1" loop  autoplay></lottie-player>
+        </div>
+        <div class="confetti">
+            <lottie-player class="success-anim" src="https://assets10.lottiefiles.com/packages/lf20_rovf9gzu.json"  background="transparent"  speed="1"></lottie-player>
+        </div>
+        <h1 class="onboard-container__title"></h1>
+        <p class="desc"></p>
+        <a href="#" class="onboard"></a>
+    </div>
+  </div>
+
+  <script src="js/aos.min.js"></script>
   <script src="js/swiper.min.js"></script>
   <script src="js/common.min.js"></script>
 </body>

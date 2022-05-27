@@ -23,6 +23,8 @@
     background-repeat: no-repeat;
     background-position: center;
     margin: 0 auto clamp(30px, 6.061vw, 80px);
+    max-width: 1200px;
+    width: 100%;
 
     @media (max-width:575px) {
       width: Min(85vw, 350px);

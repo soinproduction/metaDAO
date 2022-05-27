@@ -2,7 +2,8 @@ footer {
   background-color: var(--color-b);
 
   .container {
-    max-width: 1700px;
+    max-width: 1920px;
+    padding: 0 Min(2.604vw, 50px);
   }
 }
 
@@ -70,3 +71,5 @@ footer {
 
 
 }
+
+

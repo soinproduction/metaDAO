@@ -102,10 +102,6 @@ let slider = new Swiper(".logo-section__slider", {
       },
       on: {
         init() {
-          this.el.addEventListener('mouseenter', () => {
-            this.autoplay.stop();
-          });
-
           this.el.addEventListener('mouseleave', () => {
             this.autoplay.start();
           });
@@ -136,10 +132,11 @@ let slider = new Swiper(".logo-section__slider", {
   const enableSwiper = function () {
     slider = new Swiper(".our-team__container", {
       slidesPerView: "auto",
-      spaceBetween: 20,
+      spaceBetween: 0,
       observer: true,
       centeredSlides: true,
       loop: true,
+      loopedSlides: 2,
       slideToClickedSlide: true,
       speed: 1500,
       autoplay: {
@@ -152,10 +149,6 @@ let slider = new Swiper(".logo-section__slider", {
       },
       on: {
         init() {
-          this.el.addEventListener('mouseenter', () => {
-            this.autoplay.stop();
-          });
-
           this.el.addEventListener('mouseleave', () => {
             this.autoplay.start();
           });
@@ -242,3 +235,6 @@ async function getAccount() {
   showAccount.innerHTML = account;
   ethereumButton.classList.add('connected');
 }
+
+
+
