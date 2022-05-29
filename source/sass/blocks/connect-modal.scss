@@ -1,0 +1,55 @@
+.modal-wrap {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.4s, visibility 0.4s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 500;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.modals {
+  .m-body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .text-center {
+    margin-top: 20px;
+    display: flex;
+    grid-gap: 30px;
+    justify-content: center;
+
+    .radial-gradient-btn {
+      width: calc(100% / 2 - 15px);
+    }
+  }
+}
+
+.m-text {
+  font-size: 18px;
+  text-align: center;
+  font-family: var(--font-family);
+  margin-bottom: 20px;
+}
+
+.m-body p {
+  font-size: 16px;
+  text-align: center;
+  font-family: var(--font-family);
+}
+
+

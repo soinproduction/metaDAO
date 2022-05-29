@@ -215,26 +215,3 @@ if (document.documentElement.clientWidth < 1200) {
 
 
 
-
-const ethereumButton = document.querySelector('.connect-btn');
-const showAccount = document.querySelector('.connect-btn span');
-
-ethereumButton.addEventListener('click', () => {
-
-  if (typeof window.ethereum === 'undefined') {
-    alert('установите metamask');
-    return;
-  }
-
-  getAccount();
-});
-
-async function getAccount() {
-  const accounts = await ethereum.request({ method: 'eth_requestAccounts' });
-  const account = accounts[0];
-  showAccount.innerHTML = account;
-  ethereumButton.classList.add('connected');
-}
-
-
-

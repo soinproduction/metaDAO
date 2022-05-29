@@ -1,6 +1,6 @@
 .earn-section {
   padding-top: clamp(40px, 11.894vw, 157px);
-  background-image: url(../img/earn/img-bg.png);
+  background-image: url(../img/earn/img-bg.webp);
   // background-attachment: fixed;
   background-position: bottom;
   background-size: cover;
@@ -24,6 +24,7 @@
     width: fit-content;
     margin: 0 auto;
     pointer-events: none;
+    max-width: 85%;
   }
 
   &__list {
