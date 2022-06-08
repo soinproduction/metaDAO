@@ -1,12 +1,16 @@
 .first-section {
   position: relative;
-
+  z-index: 1;
   padding-top: calc(clamp(50px, 5.645vw, 70px) + var(--header-min-height));
 
   background-image: url(../img/index-bg.webp);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+
+  @media screen and (max-width: 575px) {
+    background-attachment: scroll;
+  }
 
   &__top {
     margin-bottom: clamp(20px, 5.556vw, 80px);

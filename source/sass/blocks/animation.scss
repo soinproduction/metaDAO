@@ -1,6 +1,6 @@
 @keyframes rightAnimation {
   0% {
-    transform: rotate(-360deg) scale(1.2);
+    transform: rotate(-360deg) scale(.8);
   }
 
   100% {
@@ -10,10 +10,10 @@
 
 @keyframes leftAnimation {
   0% {
-    transform: rotate(0) scale(.6);
+    transform: rotate(0) scale(.8);
   }
   100% {
-    transform: rotate(-360deg) scale(1.2);
+    transform: rotate(-360deg) scale(.8);
   }
 }
 
@@ -32,3 +32,12 @@
   }
 }
 
+[data-aos="show"] {
+  opacity: 0;
+  transition-property: opacity;
+
+  &.aos-animate {
+    opacity: 1;
+  }
+
+}

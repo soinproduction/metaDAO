@@ -1,15 +1,10 @@
 .earn-section {
   padding-top: clamp(40px, 11.894vw, 157px);
   background-image: url(../img/earn/img-bg.webp);
-  // background-attachment: fixed;
   background-position: bottom;
-  background-size: cover;
+  background-size: 100%;
   background-repeat: no-repeat;
-  backdrop-filter: blur(5px);
   position: relative;
-
-
-
 
   &__inner {
     display: flex;
@@ -25,6 +20,15 @@
     margin: 0 auto;
     pointer-events: none;
     max-width: 85%;
+
+    @media (max-width:575px) {
+      max-width: initial;
+      margin-left: -10px;
+      margin-right: -10px;
+      width: calc(100% + 20px);
+      padding-top: 110px;
+
+    }
   }
 
   &__list {
@@ -37,7 +41,7 @@
     margin: 0 auto;
 
     @media (max-width:768px) {
-      grid-gap: 20px 40px;
+      grid-gap: 40px;
     }
 
     @media (max-width:575px) {
@@ -51,6 +55,18 @@
   &__item {
     flex-shrink: 0;
     width: 100%;
+
+    @media (max-width:575px) {
+      min-height: 300px;
+
+      .earn-section__link::before {
+        display: none;
+      }
+    }
+
+    span {
+      pointer-events: none;
+    }
   }
 
   &__link {

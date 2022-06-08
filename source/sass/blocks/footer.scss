@@ -73,3 +73,18 @@ footer {
 }
 
 
+.footer-info {
+  padding: 30px 0 30px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 130%;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.6s;
+  }
+  a:hover {
+    color: #31f3ff;
+  }
+}

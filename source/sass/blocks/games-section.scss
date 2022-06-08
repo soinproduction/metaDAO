@@ -1,14 +1,17 @@
 .games-section {
   position: relative;
 
-  padding-top: clamp(100px, 12.879vw, 170px);
+  padding-top: clamp(50px, 12.879vw, 170px);
   padding-bottom: clamp(50px, 10.606vw, 140px);
 
   background-image: url(../img/game-bg.webp);
   background-attachment: fixed;
   box-shadow: inset 0px 40px 42px -13px #000000,inset 0px -40px 42px -13px #000000;
-
   @include bg_cover;
+
+  @media screen and (max-width: 575px) {
+    background-attachment: scroll;
+  }
 
   &__title {
     font-size: clamp(30px, 6.048vw, 75px);

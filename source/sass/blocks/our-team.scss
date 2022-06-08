@@ -1,11 +1,14 @@
 .our-team {
-  padding-top: clamp(80px, 16.818vw, 222px);
+  padding-top: clamp(30px, 77px, 77px);
   padding-bottom: clamp(100px, 19.394vw, 256px);
   background-image: url(../img/list-section-bg.webp);
   @include bg_position;
 
   &__container {
-    overflow: initial;
+
+    @media screen and (max-width: 575px) {
+      max-width: 100%;
+    }
   }
 
   &__inner {

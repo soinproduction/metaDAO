@@ -4,7 +4,7 @@
   background-size: cover;
   background-image: url(../img/tokenomics/bg.webp);
   padding-top: clamp(100px, 15.152vw, 200px);
-  padding-bottom: clamp(80px, 13.636vw, 180px);
+  padding-bottom: clamp(100px, 15.152vw, 200px);
 
 
 
@@ -22,13 +22,12 @@
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
-    margin: 0 auto clamp(30px, 6.061vw, 80px);
-    max-width: 1200px;
+    margin: 0 auto 10px;
+    max-width: 70%;
     width: 100%;
 
     @media (max-width:575px) {
-      width: Min(85vw, 350px);
-      height: Min(85vw, 350px);
+      max-width: 90%;
     }
   }
 
@@ -37,8 +36,8 @@
     top: 53%;
     left: 49.5%;
     transform: translate(-50%, -50%);
-    width: Min(22.727vw, 300px);
-    height: Min(22.727vw, 300px);
+    width: Min(18.727vw, 300px);
+    height: Min(18.727vw, 300px);
     animation: pulse 9s infinite linear;
 
     @media (max-width:575px) {
@@ -53,7 +52,7 @@
     display: grid;
     grid-template-columns: repeat(2,auto);
     justify-content: center;
-    grid-gap: clamp(25px, 6.818vw, 90px)
+    grid-gap: clamp(25px, 6.818vw, 40px)
               clamp(15px, 7.576vw, 100px);
   }
 

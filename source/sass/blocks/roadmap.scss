@@ -1,6 +1,6 @@
 .roadmap {
-  padding-top: clamp(100px, 15.152vw, 200px);
-  padding-bottom: clamp(100px, 18.939vw, 250px);
+  padding-top: 25px;
+  padding-bottom: clamp(70px, 18.939vw, 250px);
   background-color: black;
 
   &__inner {
@@ -9,5 +9,4 @@
     flex-direction: column;
     align-items: stretch;
   }
-
 }
